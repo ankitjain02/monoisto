@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    // test
     self.facebookButton.layer.cornerRadius = 8.0f;
     self.signinButton.layer.cornerRadius = 8.0f;
     self.signupButton.layer.cornerRadius = 8.0f;
