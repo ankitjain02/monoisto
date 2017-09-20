@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		22542FC61F72AB1F00710D92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22542FC51F72AB1F00710D92 /* main.m */; };
 		22542FC91F72AB1F00710D92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22542FC81F72AB1F00710D92 /* AppDelegate.m */; };
-		22542FCC1F72AB1F00710D92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22542FCB1F72AB1F00710D92 /* ViewController.m */; };
-		22542FCF1F72AB1F00710D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22542FCD1F72AB1F00710D92 /* Main.storyboard */; };
 		22542FD11F72AB1F00710D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22542FD01F72AB1F00710D92 /* Assets.xcassets */; };
 		22542FD41F72AB1F00710D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22542FD21F72AB1F00710D92 /* LaunchScreen.storyboard */; };
+		225430061F72AE6300710D92 /* MILandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225430011F72AE6300710D92 /* MILandingViewController.m */; };
+		225430071F72AE6300710D92 /* MISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225430031F72AE6300710D92 /* MISignInViewController.m */; };
+		225430081F72AE6300710D92 /* MISignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225430051F72AE6300710D92 /* MISignUpViewController.m */; };
+		2254300D1F72AEA200710D92 /* MILoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2254300C1F72AEA200710D92 /* MILoginStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		22542FC51F72AB1F00710D92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22542FC71F72AB1F00710D92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22542FC81F72AB1F00710D92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		22542FCA1F72AB1F00710D92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		22542FCB1F72AB1F00710D92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		22542FCE1F72AB1F00710D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22542FD01F72AB1F00710D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22542FD31F72AB1F00710D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22542FD51F72AB1F00710D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225430001F72AE6300710D92 /* MILandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILandingViewController.h; sourceTree = "<group>"; };
+		225430011F72AE6300710D92 /* MILandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILandingViewController.m; sourceTree = "<group>"; };
+		225430021F72AE6300710D92 /* MISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISignInViewController.h; sourceTree = "<group>"; };
+		225430031F72AE6300710D92 /* MISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISignInViewController.m; sourceTree = "<group>"; };
+		225430041F72AE6300710D92 /* MISignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISignUpViewController.h; sourceTree = "<group>"; };
+		225430051F72AE6300710D92 /* MISignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISignUpViewController.m; sourceTree = "<group>"; };
+		2254300C1F72AEA200710D92 /* MILoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MILoginStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,12 @@
 		22542FC31F72AB1F00710D92 /* Monoisto */ = {
 			isa = PBXGroup;
 			children = (
+				225430091F72AE7D00710D92 /* Frameworks */,
+				2254300A1F72AE7D00710D92 /* HelperClasses */,
+				2254300B1F72AE7D00710D92 /* Storyboards */,
+				22542FFE1F72AE6300710D92 /* ViewControllers */,
 				22542FC71F72AB1F00710D92 /* AppDelegate.h */,
 				22542FC81F72AB1F00710D92 /* AppDelegate.m */,
-				22542FCA1F72AB1F00710D92 /* ViewController.h */,
-				22542FCB1F72AB1F00710D92 /* ViewController.m */,
-				22542FCD1F72AB1F00710D92 /* Main.storyboard */,
 				22542FD01F72AB1F00710D92 /* Assets.xcassets */,
 				22542FD21F72AB1F00710D92 /* LaunchScreen.storyboard */,
 				22542FD51F72AB1F00710D92 /* Info.plist */,
@@ -77,6 +84,49 @@
 				22542FC51F72AB1F00710D92 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22542FFE1F72AE6300710D92 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22542FFF1F72AE6300710D92 /* LoginFlow */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22542FFF1F72AE6300710D92 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				225430001F72AE6300710D92 /* MILandingViewController.h */,
+				225430011F72AE6300710D92 /* MILandingViewController.m */,
+				225430021F72AE6300710D92 /* MISignInViewController.h */,
+				225430031F72AE6300710D92 /* MISignInViewController.m */,
+				225430041F72AE6300710D92 /* MISignUpViewController.h */,
+				225430051F72AE6300710D92 /* MISignUpViewController.m */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		225430091F72AE7D00710D92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2254300A1F72AE7D00710D92 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		2254300B1F72AE7D00710D92 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2254300C1F72AEA200710D92 /* MILoginStoryboard.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +189,7 @@
 			files = (
 				22542FD41F72AB1F00710D92 /* LaunchScreen.storyboard in Resources */,
 				22542FD11F72AB1F00710D92 /* Assets.xcassets in Resources */,
-				22542FCF1F72AB1F00710D92 /* Main.storyboard in Resources */,
+				2254300D1F72AEA200710D92 /* MILoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22542FCC1F72AB1F00710D92 /* ViewController.m in Sources */,
+				225430071F72AE6300710D92 /* MISignInViewController.m in Sources */,
 				22542FC91F72AB1F00710D92 /* AppDelegate.m in Sources */,
+				225430061F72AE6300710D92 /* MILandingViewController.m in Sources */,
+				225430081F72AE6300710D92 /* MISignUpViewController.m in Sources */,
 				22542FC61F72AB1F00710D92 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		22542FCD1F72AB1F00710D92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22542FCE1F72AB1F00710D92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22542FD21F72AB1F00710D92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -273,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Monoisto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MI.Monoisto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Monoisto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MI.Monoisto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +355,7 @@
 				22542FDA1F72AB1F00710D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

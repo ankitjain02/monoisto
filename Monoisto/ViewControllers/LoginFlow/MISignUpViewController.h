@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MISignUpViewController.h
 //  Monoisto
 //
 //  Created by vishal jain on 20/09/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MISignUpViewController : UIViewController
 
 @end
-
