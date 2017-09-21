@@ -7,6 +7,7 @@
 //
 
 #import "MILandingViewController.h"
+#import "MITabBarViewController.h"
 
 @interface MILandingViewController ()
 
@@ -26,28 +27,11 @@
     self.signinButton.layer.cornerRadius = 8.0f;
     self.signupButton.layer.cornerRadius = 8.0f;
     
-    // Status bar white font
-    UIImage *img = [self getNavImage];
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
-    [imgView setImage:img];
-    // setContent mode aspect fit
-    [imgView setContentMode:UIViewContentModeScaleAspectFit];
-    self.navigationItem.titleView = imgView;
+    //TODO:: Remove code later
+    MITabBarViewController *tabController = [[MITabBarViewController alloc] init];
+    [self.navigationController pushViewController:tabController animated:YES];
+    self.navigationController.navigationBarHidden = YES;
 }
-
--(UIImage *)getNavImage {
-    CGSize imageSize = CGSizeMake(self.view.frame.size.width, 64);
-    UIColor *fillColor = [UIColor colorWithRed:23/255 green:180/255 blue:192/255 alpha:1.0];
-    UIGraphicsBeginImageContextWithOptions(imageSize, YES, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    [fillColor setFill];
-    CGContextFillRect(context, CGRectMake(0, 0, imageSize.width, imageSize.height));
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

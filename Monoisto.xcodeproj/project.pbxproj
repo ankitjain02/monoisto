@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2229B4E61F7404490093D884 /* MITabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B4E51F7404490093D884 /* MITabBarViewController.m */; };
+		2229B4E91F7404770093D884 /* MIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B4E81F7404770093D884 /* MIHomeViewController.m */; };
+		2229B4EC1F74048E0093D884 /* MIIstoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B4EB1F74048E0093D884 /* MIIstoViewController.m */; };
+		2229B4EF1F7404BF0093D884 /* MIsearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B4EE1F7404BF0093D884 /* MIsearchViewController.m */; };
+		2229B4F21F7404D20093D884 /* MIWardrobeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B4F11F7404D20093D884 /* MIWardrobeViewController.m */; };
+		2229B4F51F7404E80093D884 /* MIMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B4F41F7404E80093D884 /* MIMenuViewController.m */; };
+		2229B4F71F7405070093D884 /* MITabBarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2229B4F61F7405070093D884 /* MITabBarStoryboard.storyboard */; };
+		2229B4FB1F74053C0093D884 /* MIHomeIstoPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B4F91F74053C0093D884 /* MIHomeIstoPostTableViewCell.m */; };
+		2229B4FC1F74053C0093D884 /* MIHomeIstoPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2229B4FA1F74053C0093D884 /* MIHomeIstoPostTableViewCell.xib */; };
 		22542FC61F72AB1F00710D92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22542FC51F72AB1F00710D92 /* main.m */; };
 		22542FC91F72AB1F00710D92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22542FC81F72AB1F00710D92 /* AppDelegate.m */; };
 		22542FD11F72AB1F00710D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22542FD01F72AB1F00710D92 /* Assets.xcassets */; };
@@ -18,6 +27,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2229B4E41F7404490093D884 /* MITabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITabBarViewController.h; sourceTree = "<group>"; };
+		2229B4E51F7404490093D884 /* MITabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITabBarViewController.m; sourceTree = "<group>"; };
+		2229B4E71F7404770093D884 /* MIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIHomeViewController.h; sourceTree = "<group>"; };
+		2229B4E81F7404770093D884 /* MIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIHomeViewController.m; sourceTree = "<group>"; };
+		2229B4EA1F74048E0093D884 /* MIIstoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIIstoViewController.h; sourceTree = "<group>"; };
+		2229B4EB1F74048E0093D884 /* MIIstoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIIstoViewController.m; sourceTree = "<group>"; };
+		2229B4ED1F7404BF0093D884 /* MIsearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIsearchViewController.h; sourceTree = "<group>"; };
+		2229B4EE1F7404BF0093D884 /* MIsearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIsearchViewController.m; sourceTree = "<group>"; };
+		2229B4F01F7404D20093D884 /* MIWardrobeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIWardrobeViewController.h; sourceTree = "<group>"; };
+		2229B4F11F7404D20093D884 /* MIWardrobeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIWardrobeViewController.m; sourceTree = "<group>"; };
+		2229B4F31F7404E80093D884 /* MIMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMenuViewController.h; sourceTree = "<group>"; };
+		2229B4F41F7404E80093D884 /* MIMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIMenuViewController.m; sourceTree = "<group>"; };
+		2229B4F61F7405070093D884 /* MITabBarStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MITabBarStoryboard.storyboard; sourceTree = "<group>"; };
+		2229B4F81F74053C0093D884 /* MIHomeIstoPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIHomeIstoPostTableViewCell.h; sourceTree = "<group>"; };
+		2229B4F91F74053C0093D884 /* MIHomeIstoPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIHomeIstoPostTableViewCell.m; sourceTree = "<group>"; };
+		2229B4FA1F74053C0093D884 /* MIHomeIstoPostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIHomeIstoPostTableViewCell.xib; sourceTree = "<group>"; };
 		22542FC11F72AB1F00710D92 /* Monoisto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monoisto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22542FC51F72AB1F00710D92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22542FC71F72AB1F00710D92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +70,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2229B4E21F7404230093D884 /* TabBarFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2229B4E31F7404230093D884 /* TableCells */,
+				2229B4E41F7404490093D884 /* MITabBarViewController.h */,
+				2229B4E51F7404490093D884 /* MITabBarViewController.m */,
+				2229B4E71F7404770093D884 /* MIHomeViewController.h */,
+				2229B4E81F7404770093D884 /* MIHomeViewController.m */,
+				2229B4EA1F74048E0093D884 /* MIIstoViewController.h */,
+				2229B4EB1F74048E0093D884 /* MIIstoViewController.m */,
+				2229B4ED1F7404BF0093D884 /* MIsearchViewController.h */,
+				2229B4EE1F7404BF0093D884 /* MIsearchViewController.m */,
+				2229B4F01F7404D20093D884 /* MIWardrobeViewController.h */,
+				2229B4F11F7404D20093D884 /* MIWardrobeViewController.m */,
+				2229B4F31F7404E80093D884 /* MIMenuViewController.h */,
+				2229B4F41F7404E80093D884 /* MIMenuViewController.m */,
+			);
+			path = TabBarFlow;
+			sourceTree = "<group>";
+		};
+		2229B4E31F7404230093D884 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				2229B4F81F74053C0093D884 /* MIHomeIstoPostTableViewCell.h */,
+				2229B4F91F74053C0093D884 /* MIHomeIstoPostTableViewCell.m */,
+				2229B4FA1F74053C0093D884 /* MIHomeIstoPostTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
 		22542FB81F72AB1F00710D92 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +144,7 @@
 		22542FFE1F72AE6300710D92 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2229B4E21F7404230093D884 /* TabBarFlow */,
 				22542FFF1F72AE6300710D92 /* LoginFlow */,
 			);
 			path = ViewControllers;
@@ -125,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				2254300C1F72AEA200710D92 /* MILoginStoryboard.storyboard */,
+				2229B4F61F7405070093D884 /* MITabBarStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -190,6 +247,8 @@
 				22542FD41F72AB1F00710D92 /* LaunchScreen.storyboard in Resources */,
 				22542FD11F72AB1F00710D92 /* Assets.xcassets in Resources */,
 				2254300D1F72AEA200710D92 /* MILoginStoryboard.storyboard in Resources */,
+				2229B4F71F7405070093D884 /* MITabBarStoryboard.storyboard in Resources */,
+				2229B4FC1F74053C0093D884 /* MIHomeIstoPostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +261,16 @@
 			files = (
 				225430071F72AE6300710D92 /* MISignInViewController.m in Sources */,
 				22542FC91F72AB1F00710D92 /* AppDelegate.m in Sources */,
+				2229B4E61F7404490093D884 /* MITabBarViewController.m in Sources */,
 				225430061F72AE6300710D92 /* MILandingViewController.m in Sources */,
+				2229B4F51F7404E80093D884 /* MIMenuViewController.m in Sources */,
 				225430081F72AE6300710D92 /* MISignUpViewController.m in Sources */,
+				2229B4EF1F7404BF0093D884 /* MIsearchViewController.m in Sources */,
+				2229B4F21F7404D20093D884 /* MIWardrobeViewController.m in Sources */,
+				2229B4EC1F74048E0093D884 /* MIIstoViewController.m in Sources */,
+				2229B4E91F7404770093D884 /* MIHomeViewController.m in Sources */,
 				22542FC61F72AB1F00710D92 /* main.m in Sources */,
+				2229B4FB1F74053C0093D884 /* MIHomeIstoPostTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
