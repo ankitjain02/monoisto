@@ -70,8 +70,27 @@
                     <view key="view" contentMode="scaleToFill" id="TpJ-Ri-XVZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C41-as-v4D">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dfH-SB-MUt" id="Via-AX-Icd"/>
+                                    <outlet property="delegate" destination="dfH-SB-MUt" id="EzD-sn-8O3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C41-as-v4D" firstAttribute="height" secondItem="TpJ-Ri-XVZ" secondAttribute="height" id="BNB-i4-Hsq"/>
+                            <constraint firstItem="C41-as-v4D" firstAttribute="centerX" secondItem="TpJ-Ri-XVZ" secondAttribute="centerX" id="CcX-cu-Jig"/>
+                            <constraint firstItem="C41-as-v4D" firstAttribute="width" secondItem="TpJ-Ri-XVZ" secondAttribute="width" id="Va9-ki-RYi"/>
+                            <constraint firstItem="C41-as-v4D" firstAttribute="centerY" secondItem="TpJ-Ri-XVZ" secondAttribute="centerY" id="mWX-Nm-lC6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="istoTableView" destination="C41-as-v4D" id="BX2-Tx-cSm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2uB-FE-W8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
