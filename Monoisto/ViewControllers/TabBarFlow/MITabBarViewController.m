@@ -30,27 +30,27 @@
     // 1. Home Tab
     MIHomeViewController *homeVC = (MIHomeViewController*)[storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MIHomeViewController class])];
     UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
-    homeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:1];
+    homeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tab_home"] tag:1];
     
     // 2. Search Tab
     MIsearchViewController *searchVC = (MIsearchViewController*)[storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MIsearchViewController class])];
     UINavigationController *searchNav = [[UINavigationController alloc] initWithRootViewController:searchVC];
-    searchNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Search" image:nil tag:1];
+    searchNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tab_search"] tag:1];
 
     // 3. Isot Tab
     MIIstoViewController *istoVC = (MIIstoViewController*)[storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MIIstoViewController class])];
     UINavigationController *istoNav = [[UINavigationController alloc] initWithRootViewController:istoVC];
-    istoNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Isto" image:nil tag:1];
+    istoNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tab_isto"] tag:1];
 
     // 4. Wardrobe Tab
     MIHomeViewController *wardrobeVC = (MIHomeViewController*)[storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MIHomeViewController class])];
     UINavigationController *wardrobeNav = [[UINavigationController alloc] initWithRootViewController:wardrobeVC];
-    wardrobeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Wardrobe" image:nil tag:1];
+    wardrobeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tab_wardrobe"] tag:1];
 
     // 5. Menu Tab
     MIMenuViewController *menuVC = (MIMenuViewController*)[storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MIMenuViewController class])];
     UINavigationController *menuNav = [[UINavigationController alloc] initWithRootViewController:menuVC];
-    menuNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Menu" image:nil tag:1];
+    menuNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tab_menu"] tag:1];
     
     // Add all the five tabs
     self.viewControllers = @[homeNav, searchNav, istoNav, wardrobeNav, menuNav];
