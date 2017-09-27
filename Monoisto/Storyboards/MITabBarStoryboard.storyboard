@@ -107,8 +107,27 @@
                     <view key="view" contentMode="scaleToFill" id="XnW-Ic-gBm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="97S-er-p43">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dmC-4t-FvW" id="oEz-si-z7s"/>
+                                    <outlet property="delegate" destination="dmC-4t-FvW" id="icC-dq-UIq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="97S-er-p43" firstAttribute="height" secondItem="XnW-Ic-gBm" secondAttribute="height" id="0iw-qn-T7z"/>
+                            <constraint firstItem="97S-er-p43" firstAttribute="centerY" secondItem="XnW-Ic-gBm" secondAttribute="centerY" id="JH9-Yg-OcZ"/>
+                            <constraint firstItem="97S-er-p43" firstAttribute="width" secondItem="XnW-Ic-gBm" secondAttribute="width" id="R0b-qO-rwd"/>
+                            <constraint firstItem="97S-er-p43" firstAttribute="centerX" secondItem="XnW-Ic-gBm" secondAttribute="centerX" id="bE3-Y2-xEr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="wardrobeTableView" destination="97S-er-p43" id="M4Z-eL-sgR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yct-m8-0WX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -43,7 +43,7 @@
     istoNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tab_isto"] tag:1];
 
     // 4. Wardrobe Tab
-    MIHomeViewController *wardrobeVC = (MIHomeViewController*)[storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MIHomeViewController class])];
+    MIWardrobeViewController *wardrobeVC = (MIWardrobeViewController*)[storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([MIWardrobeViewController class])];
     UINavigationController *wardrobeNav = [[UINavigationController alloc] initWithRootViewController:wardrobeVC];
     wardrobeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:[UIImage imageNamed:@"tab_wardrobe"] tag:1];
 

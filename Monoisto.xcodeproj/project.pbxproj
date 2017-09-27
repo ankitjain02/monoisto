@@ -44,6 +44,13 @@
 		2229B54F1F7786DB0093D884 /* MIWhereAreYouGoingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2229B54D1F7786DB0093D884 /* MIWhereAreYouGoingCell.xib */; };
 		2229B5531F7786FA0093D884 /* MIWhomAreYourMeetingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229B5511F7786FA0093D884 /* MIWhomAreYourMeetingCell.m */; };
 		2229B5541F7786FA0093D884 /* MIWhomAreYourMeetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2229B5521F7786FA0093D884 /* MIWhomAreYourMeetingCell.xib */; };
+		223C07221F7BCB5200328974 /* MIWardrobeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C07201F7BCB5200328974 /* MIWardrobeListTableViewCell.m */; };
+		223C07231F7BCB5200328974 /* MIWardrobeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223C07211F7BCB5200328974 /* MIWardrobeListTableViewCell.xib */; };
+		223C07271F7BCC3900328974 /* MIWardrobeIndividualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C07261F7BCC3900328974 /* MIWardrobeIndividualView.m */; };
+		223C07291F7BCD2300328974 /* MIWardrobeIndividualView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223C07281F7BCD2300328974 /* MIWardrobeIndividualView.xib */; };
+		223C072C1F7BCE1600328974 /* MIWardrobeTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C072B1F7BCE1600328974 /* MIWardrobeTableHeaderView.m */; };
+		223C072E1F7BCE2900328974 /* MIWardrobeTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223C072D1F7BCE2900328974 /* MIWardrobeTableHeaderView.xib */; };
+		223C07321F7BDB4800328974 /* MIWardrobeIndividualData.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C07311F7BDB4800328974 /* MIWardrobeIndividualData.m */; };
 		22542FC61F72AB1F00710D92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22542FC51F72AB1F00710D92 /* main.m */; };
 		22542FC91F72AB1F00710D92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22542FC81F72AB1F00710D92 /* AppDelegate.m */; };
 		22542FD11F72AB1F00710D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22542FD01F72AB1F00710D92 /* Assets.xcassets */; };
@@ -124,6 +131,17 @@
 		2229B5501F7786FA0093D884 /* MIWhomAreYourMeetingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIWhomAreYourMeetingCell.h; sourceTree = "<group>"; };
 		2229B5511F7786FA0093D884 /* MIWhomAreYourMeetingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIWhomAreYourMeetingCell.m; sourceTree = "<group>"; };
 		2229B5521F7786FA0093D884 /* MIWhomAreYourMeetingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIWhomAreYourMeetingCell.xib; sourceTree = "<group>"; };
+		223C071F1F7BCB5200328974 /* MIWardrobeListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIWardrobeListTableViewCell.h; sourceTree = "<group>"; };
+		223C07201F7BCB5200328974 /* MIWardrobeListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIWardrobeListTableViewCell.m; sourceTree = "<group>"; };
+		223C07211F7BCB5200328974 /* MIWardrobeListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIWardrobeListTableViewCell.xib; sourceTree = "<group>"; };
+		223C07251F7BCC3900328974 /* MIWardrobeIndividualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIWardrobeIndividualView.h; sourceTree = "<group>"; };
+		223C07261F7BCC3900328974 /* MIWardrobeIndividualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIWardrobeIndividualView.m; sourceTree = "<group>"; };
+		223C07281F7BCD2300328974 /* MIWardrobeIndividualView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIWardrobeIndividualView.xib; sourceTree = "<group>"; };
+		223C072A1F7BCE1600328974 /* MIWardrobeTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIWardrobeTableHeaderView.h; sourceTree = "<group>"; };
+		223C072B1F7BCE1600328974 /* MIWardrobeTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIWardrobeTableHeaderView.m; sourceTree = "<group>"; };
+		223C072D1F7BCE2900328974 /* MIWardrobeTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIWardrobeTableHeaderView.xib; sourceTree = "<group>"; };
+		223C07301F7BDB4800328974 /* MIWardrobeIndividualData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIWardrobeIndividualData.h; sourceTree = "<group>"; };
+		223C07311F7BDB4800328974 /* MIWardrobeIndividualData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIWardrobeIndividualData.m; sourceTree = "<group>"; };
 		22542FC11F72AB1F00710D92 /* Monoisto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monoisto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22542FC51F72AB1F00710D92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22542FC71F72AB1F00710D92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +172,7 @@
 		2229B4E21F7404230093D884 /* TabBarFlow */ = {
 			isa = PBXGroup;
 			children = (
+				223C07241F7BCC0B00328974 /* HeaderAndFooter */,
 				2229B4E31F7404230093D884 /* TableCells */,
 				2229B4E41F7404490093D884 /* MITabBarViewController.h */,
 				2229B4E51F7404490093D884 /* MITabBarViewController.m */,
@@ -189,6 +208,9 @@
 				2229B5501F7786FA0093D884 /* MIWhomAreYourMeetingCell.h */,
 				2229B5511F7786FA0093D884 /* MIWhomAreYourMeetingCell.m */,
 				2229B5521F7786FA0093D884 /* MIWhomAreYourMeetingCell.xib */,
+				223C071F1F7BCB5200328974 /* MIWardrobeListTableViewCell.h */,
+				223C07201F7BCB5200328974 /* MIWardrobeListTableViewCell.m */,
+				223C07211F7BCB5200328974 /* MIWardrobeListTableViewCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -249,6 +271,28 @@
 			path = FLAnimatedImage;
 			sourceTree = "<group>";
 		};
+		223C07241F7BCC0B00328974 /* HeaderAndFooter */ = {
+			isa = PBXGroup;
+			children = (
+				223C07251F7BCC3900328974 /* MIWardrobeIndividualView.h */,
+				223C07261F7BCC3900328974 /* MIWardrobeIndividualView.m */,
+				223C07281F7BCD2300328974 /* MIWardrobeIndividualView.xib */,
+				223C072A1F7BCE1600328974 /* MIWardrobeTableHeaderView.h */,
+				223C072B1F7BCE1600328974 /* MIWardrobeTableHeaderView.m */,
+				223C072D1F7BCE2900328974 /* MIWardrobeTableHeaderView.xib */,
+			);
+			path = HeaderAndFooter;
+			sourceTree = "<group>";
+		};
+		223C072F1F7BDB3000328974 /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				223C07301F7BDB4800328974 /* MIWardrobeIndividualData.h */,
+				223C07311F7BDB4800328974 /* MIWardrobeIndividualData.m */,
+			);
+			path = ModelClass;
+			sourceTree = "<group>";
+		};
 		22542FB81F72AB1F00710D92 = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +312,7 @@
 		22542FC31F72AB1F00710D92 /* Monoisto */ = {
 			isa = PBXGroup;
 			children = (
+				223C072F1F7BDB3000328974 /* ModelClass */,
 				225430091F72AE7D00710D92 /* Frameworks */,
 				2254300A1F72AE7D00710D92 /* HelperClasses */,
 				2254300B1F72AE7D00710D92 /* Storyboards */,
@@ -396,11 +441,14 @@
 			files = (
 				22542FD41F72AB1F00710D92 /* LaunchScreen.storyboard in Resources */,
 				2229B5541F7786FA0093D884 /* MIWhomAreYourMeetingCell.xib in Resources */,
+				223C072E1F7BCE2900328974 /* MIWardrobeTableHeaderView.xib in Resources */,
 				22542FD11F72AB1F00710D92 /* Assets.xcassets in Resources */,
 				2229B54A1F7786C20093D884 /* MIWhatAreYouWearingCell.xib in Resources */,
 				2254300D1F72AEA200710D92 /* MILoginStoryboard.storyboard in Resources */,
+				223C07291F7BCD2300328974 /* MIWardrobeIndividualView.xib in Resources */,
 				2229B4F71F7405070093D884 /* MITabBarStoryboard.storyboard in Resources */,
 				2229B54F1F7786DB0093D884 /* MIWhereAreYouGoingCell.xib in Resources */,
+				223C07231F7BCB5200328974 /* MIWardrobeListTableViewCell.xib in Resources */,
 				2229B5401F7780EF0093D884 /* MIFinalLookPictureCell.xib in Resources */,
 				2229B4FC1F74053C0093D884 /* MIHomeIstoPostTableViewCell.xib in Resources */,
 			);
@@ -420,11 +468,13 @@
 				225430071F72AE6300710D92 /* MISignInViewController.m in Sources */,
 				2229B52D1F7775A70093D884 /* SDImageCacheConfig.m in Sources */,
 				22542FC91F72AB1F00710D92 /* AppDelegate.m in Sources */,
+				223C07271F7BCC3900328974 /* MIWardrobeIndividualView.m in Sources */,
 				2229B4E61F7404490093D884 /* MITabBarViewController.m in Sources */,
 				2229B5361F7775A70093D884 /* UIImage+MultiFormat.m in Sources */,
 				2229B5281F7775A70093D884 /* FLAnimatedImageView+WebCache.m in Sources */,
 				225430061F72AE6300710D92 /* MILandingViewController.m in Sources */,
 				2229B4F51F7404E80093D884 /* MIMenuViewController.m in Sources */,
+				223C07221F7BCB5200328974 /* MIWardrobeListTableViewCell.m in Sources */,
 				2229B53A1F7775A70093D884 /* UIView+WebCache.m in Sources */,
 				2229B5371F7775A70093D884 /* UIImage+WebP.m in Sources */,
 				2229B5331F7775A70093D884 /* SDWebImagePrefetcher.m in Sources */,
@@ -437,7 +487,9 @@
 				2229B4EC1F74048E0093D884 /* MIIstoViewController.m in Sources */,
 				2229B52F1F7775A70093D884 /* SDWebImageDecoder.m in Sources */,
 				2229B52A1F7775A70093D884 /* NSData+ImageContentType.m in Sources */,
+				223C072C1F7BCE1600328974 /* MIWardrobeTableHeaderView.m in Sources */,
 				2229B5381F7775A70093D884 /* UIImageView+HighlightedWebCache.m in Sources */,
+				223C07321F7BDB4800328974 /* MIWardrobeIndividualData.m in Sources */,
 				2229B5341F7775A70093D884 /* UIButton+WebCache.m in Sources */,
 				2229B54E1F7786DB0093D884 /* MIWhereAreYouGoingCell.m in Sources */,
 				2229B4E91F7404770093D884 /* MIHomeViewController.m in Sources */,

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MIWardrobeIndividualView">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb0-4C-o6U">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="220"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uyQ-zi-PMP">
+                            <rect key="frame" x="20" y="12" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="1d7-31-5eH"/>
+                                <constraint firstAttribute="height" constant="120" id="WTS-vF-IpB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czj-Gb-GA4">
+                            <rect key="frame" x="20" y="143" width="120" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL5-EB-HlH">
+                            <rect key="frame" x="20" y="172" width="120" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vL5-EB-HlH" firstAttribute="centerX" secondItem="czj-Gb-GA4" secondAttribute="centerX" id="0av-9W-xy3"/>
+                        <constraint firstItem="vL5-EB-HlH" firstAttribute="width" secondItem="czj-Gb-GA4" secondAttribute="width" id="DPH-z1-r2x"/>
+                        <constraint firstItem="uyQ-zi-PMP" firstAttribute="centerX" secondItem="yb0-4C-o6U" secondAttribute="centerX" id="DSe-ra-r49"/>
+                        <constraint firstItem="czj-Gb-GA4" firstAttribute="top" secondItem="uyQ-zi-PMP" secondAttribute="bottom" constant="11" id="cz9-2y-z5V"/>
+                        <constraint firstItem="czj-Gb-GA4" firstAttribute="centerX" secondItem="uyQ-zi-PMP" secondAttribute="centerX" id="fAh-Ku-6mG"/>
+                        <constraint firstItem="vL5-EB-HlH" firstAttribute="top" secondItem="czj-Gb-GA4" secondAttribute="bottom" constant="8" id="p79-ve-SSt"/>
+                        <constraint firstItem="uyQ-zi-PMP" firstAttribute="top" secondItem="yb0-4C-o6U" secondAttribute="top" constant="12" id="ymK-AL-Cbu"/>
+                        <constraint firstItem="czj-Gb-GA4" firstAttribute="width" secondItem="uyQ-zi-PMP" secondAttribute="width" id="ziA-pg-qpr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yb0-4C-o6U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="05k-1q-hZ4"/>
+                <constraint firstItem="yb0-4C-o6U" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Duj-Fb-Tbd"/>
+                <constraint firstItem="yb0-4C-o6U" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ElN-Ff-xeP"/>
+                <constraint firstItem="yb0-4C-o6U" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="gGu-4Z-UL8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="yb0-4C-o6U" id="kOE-1j-tFs"/>
+                <outlet property="detailLabel" destination="vL5-EB-HlH" id="PAI-Ms-d3L"/>
+                <outlet property="displayImageView" destination="uyQ-zi-PMP" id="bzQ-NQ-J0Z"/>
+                <outlet property="titleLabel" destination="czj-Gb-GA4" id="A1a-Jz-k29"/>
+            </connections>
+        </view>
+    </objects>
+</document>
