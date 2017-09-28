@@ -8,6 +8,7 @@
 
 #import "MILandingViewController.h"
 #import "MITabBarViewController.h"
+#import "MIFacebookManager.h"
 
 @interface MILandingViewController ()
 
@@ -27,10 +28,22 @@
     self.signinButton.layer.cornerRadius = 8.0f;
     self.signupButton.layer.cornerRadius = 8.0f;
     
-    //TODO:: Remove code later
-    MITabBarViewController *tabController = [[MITabBarViewController alloc] init];
-    [self.navigationController pushViewController:tabController animated:YES];
-    self.navigationController.navigationBarHidden = YES;
+    // Facebook :: Condition to check if user already login
+    if ([FBSDKAccessToken currentAccessToken]) {
+        
+        // Fetch Profile Data & Picture
+        [[MIFacebookManager sharedManager] getUserFBProfileDataWithCompletionHandler:^(id  _Nullable result, NSError * _Nullable error) {
+            // Handle the result
+            if (!error) {
+                NSLog(@"fetched user profile picture:%@", result);
+            }
+        }];
+
+        // User is logged in, do work such as go to next view controller.
+        MITabBarViewController *tabController = [[MITabBarViewController alloc] init];
+        [self.navigationController pushViewController:tabController animated:YES];
+        self.navigationController.navigationBarHidden = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +54,20 @@
 
 #pragma mark - Button Actions
 - (IBAction)facebookButtonTapped:(id)sender {
+    // Once the button is clicked, show the login dialog
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    [login
+     logInWithReadPermissions: @[@"public_profile", @"email", @"user_friends"]
+     fromViewController:self
+     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+         if (error) {
+             NSLog(@"Process error");
+         } else if (result.isCancelled) {
+             NSLog(@"Cancelled");
+         } else {
+             NSLog(@"Logged in");
+         }
+     }];
 }
 
 - (IBAction)signinTapped:(id)sender {
