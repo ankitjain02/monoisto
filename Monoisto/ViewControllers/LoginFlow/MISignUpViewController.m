@@ -53,6 +53,7 @@
 
 -(IBAction)backBtnTapped:(id)sender {
     // Back Button
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Text Field Delegate
