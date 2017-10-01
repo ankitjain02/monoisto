@@ -49,11 +49,53 @@
 
 -(IBAction)continueBtnTapped:(id)sender {
     // Continue Button
+    
+    if ([self.nameTextField.text length] == 0) {
+        // Show Name Check Pop Up
+        [self showAlertWithTitle:@"Error" message:@"Please enter a valid name."];
+        return;
+    } else if (![self validateEmailWithString:self.emailTextField.text]) {
+        // Show Email Check Pop Up
+        [self showAlertWithTitle:@"Error" message:@"Please enter a valid email id."];
+        return;
+    } else if ([self.pswdTextField.text length] < 8) {
+        // Show Password Check Pop Up
+        [self showAlertWithTitle:@"Error" message:@"Please enter a valid password of length 8 characters."];
+        return;
+    }
+    
+    NSLog(@"Validation is success");
 }
 
 -(IBAction)backBtnTapped:(id)sender {
     // Back Button
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark -
+
+-(void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+    }];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+#pragma mark - Email Validation
+
+- (BOOL)validateEmailWithString:(NSString*)checkString
+{
+    BOOL stricterFilter = NO;
+    NSString *stricterFilterString = @"[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}";
+    NSString *laxString = @".+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*";
+    NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:checkString];
 }
 
 #pragma mark - Text Field Delegate
